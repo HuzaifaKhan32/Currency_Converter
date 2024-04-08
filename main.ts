@@ -36,4 +36,4 @@ let toConverter = exchangeRates[user_answer.to];
 let amount = user_answer.amount;
 let baseAmount = amount / fromConverter ;
 let convertedAmount = baseAmount * toConverter;
-console.log(convertedAmount.toFixed(2)); 
+console.log(`${user_answer.amount} ${user_answer.from} = ${convertedAmount.toFixed(2)} ${user_answer.to}`); 
